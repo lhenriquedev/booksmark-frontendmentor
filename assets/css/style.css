@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 3rem 0;
 }
@@ -154,9 +154,7 @@ body {
 
 .header {
   padding: 0 3rem;
-  height: 80vh;
-
-  overflow: hidden;
+  height: 100vh;
 }
 
 .header__content {
@@ -165,6 +163,11 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+}
+
+.header__content img {
+  object-fit: cover;
+  height: 40rem;
 }
 .header__title {
   max-width: 60rem;
@@ -253,4 +256,34 @@ body {
 }
 .features__description .btn {
   align-self: flex-start;
+}
+
+@media (max-width: 767px) {
+  .header {
+    height: 110rem;
+  }
+  .header__content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 4rem;
+  }
+  .hearder__content img {
+    order: 1;
+  }
+  .features__content--active {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .features__tab-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav__links {
+    display: none;
+  }
 }
