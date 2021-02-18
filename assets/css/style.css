@@ -310,7 +310,7 @@ body {
 
   .header__cta {
     display: flex;
-    align-self: flex-start;
+    align-self: center;
   }
 
   .header__cta .btn {
