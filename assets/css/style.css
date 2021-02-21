@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 .container {
@@ -261,20 +261,23 @@ body {
 .extensions {
   max-width: 100rem;
   margin: 0 auto;
-  height: 60rem;
+}
+
+.extensions .container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  height: 60rem;
+  margin-top: 5rem;
 }
 
 .article {
-  height: 40rem;
-  padding: 2rem;
-  box-shadow: 5px 3px 10px 0px #c2c2c2;
+  height: 35rem;
+  padding: 2.6rem;
+  box-shadow: 0px 5px 8px 1px #ddd;
 
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -293,10 +296,10 @@ body {
 }
 
 .article h5 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 300;
   color: var(--color-primary-gray);
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .article .btn {
