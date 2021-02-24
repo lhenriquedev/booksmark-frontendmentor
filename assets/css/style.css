@@ -317,6 +317,50 @@ body {
   align-self: flex-end;
 }
 
+.faq-container {
+  max-width: 50rem;
+  margin: 5rem auto 0;
+}
+
+.faq {
+  border-top: 1px solid var(--color-primary-gray);
+  position: relative;
+}
+
+.faq h3 {
+  padding: 2rem 0;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--color-primary-gray-dark);
+}
+
+.faq p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--color-primary-gray);
+
+  transition: 0.5s ease;
+  padding: 0.6rem 0;
+  line-height: 1.6;
+
+  display: none;
+}
+
+.faq.active p {
+  display: block;
+}
+
+.faq__btn {
+  outline: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+
+  position: absolute;
+  right: 1rem;
+  top: 2.2rem;
+}
+
 @media (max-width: 1172px) {
   .header__img {
     width: 100%;
@@ -396,5 +440,21 @@ body {
 
   .nav__links {
     display: none;
+  }
+
+  .extensions .container {
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .extensions .article {
+    padding: 1.5rem;
+  }
+  .article h4 {
+    font-size: 1.6rem;
+  }
+  .article h5 {
+    font-size: 1.4rem;
   }
 }
