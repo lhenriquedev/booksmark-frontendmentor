@@ -361,6 +361,108 @@ body {
   top: 2.2rem;
 }
 
+.faq-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 4rem;
+}
+
+footer {
+  background: var(--color-primary);
+  height: 30rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.footer h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  letter-spacing: 5px;
+}
+
+.footer h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #fff;
+}
+
+.form {
+  display: flex;
+}
+.form__input {
+  padding: 1.4rem 2rem;
+  margin-right: 1rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.form__input:focus {
+  outline: 0;
+}
+
+.form__button {
+  flex: 1;
+  background: var(--color-secondary);
+  padding: 1.3rem 2.5rem;
+  border: 0;
+  font-size: 1.6rem;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+
+  transition: all 0.3s;
+}
+
+.form__button:hover {
+  filter: brightness(0.9);
+}
+
+.nav-footer {
+  background: var(--color-primary-gray-dark);
+}
+
+.nav-footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-footer__logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-footer__logo ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-footer__logo li {
+  font-size: 1.7rem;
+  color: #fff;
+}
+
+.nav-footer__logo ul li:not(:last-child) {
+  margin-right: 2.2rem;
+}
+
+.icons img:not(:last-child) {
+  margin-right: 1rem;
+}
+
 @media (max-width: 1172px) {
   .header__img {
     width: 100%;
